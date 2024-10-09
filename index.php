@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PHP OOP 1</title>
-</head>
+// Includi il file della classe Movie
+require_once __DIR__ . '/classes/Movie.php';
 
-<body>
+// Istanziamento di due oggetti Movie
+$movie1 = new Movie("Il cosmo sul comó", "Marcello Cesena", 2008);
+$movie2 = new Movie("Replicas", "Jeffrey Nachmanoff", 2019);
 
-</body>
-
-</html>
+// Stampa dei valori delle proprietà degli oggetti
+echo $movie1->getMovieInfo();
+echo "<br>";
+echo $movie2->getMovieInfo();
