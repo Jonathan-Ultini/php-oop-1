@@ -1,13 +1,12 @@
 <?php
+// Includiamo il file con i dati dei film
+require_once __DIR__ . '/data/db.php';
 
-// Includi il file della classe Movie
-require_once __DIR__ . '/classes/Movie.php';
+// Includiamo l'header
+include __DIR__ . '/includes/header.php';
 
-// Istanziamento di due oggetti Movie
-$movie1 = new Movie("Il cosmo sul comó", "Marcello Cesena", 2008, ["Commedy"]);
-$movie2 = new Movie("Replicas", "Jeffrey Nachmanoff", 2019, ["Sci-Fi", "Thriller"]);
+// Includiamo la lista dei film
+include __DIR__ . '/includes/movie_list.php';
 
-// Stampa dei valori delle proprietà degli oggetti
-echo $movie1->getMovieInfo();
-echo "<br>";
-echo $movie2->getMovieInfo();
+// Includiamo il footer
+include __DIR__ . '/includes/footer.php';
