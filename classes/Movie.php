@@ -26,9 +26,6 @@ class Movie
   // Metodo per ottenere informazioni sul film
   public function getMovieInfo()
   {
-    return "Title: " . $this->title .
-      ", Director: " . $this->director .
-      ", Year: " . $this->year .
-      ", Genres: " . $this->getGenres();
+    return $this->title . " (" . $this->year . ") directed by " . $this->director . " - Genres: " . $this->getGenres();
   }
 }
